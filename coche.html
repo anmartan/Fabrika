@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Coche</title>
+	<script type="text/javascript" src="main.js"></script>
+		<script>coche()</script>
+        <link type="text/css" href="main.css" rel="stylesheet" />
+
+    <style>
+		.coche {
+			display: grid;
+			place-items: center;
+		}
+
+        /* Contenedor para los cuadros de input en fila */
+        .inputs-wrapper {
+            display: flex;
+            gap: 4vw; /* Espacio entre los cuadros */
+            justify-content: center;
+            width: 100%;
+			min-height: 40vh;
+            max-width: 600px; /* Limitar el ancho total en pantallas grandes */
+            margin-bottom: 5vh;
+			padding: 0 5vw;
+        }
+
+        /* Contenedor de cada cuadro de input */
+        .input-container {
+			--my-color: #ff00ff;
+            flex: 1;
+            padding: 2vh;
+			gap: 4vw;
+            justify-content: center;
+			background-color: var(--my-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+		#
+
+        /* Texto del título de cada cuadro de input */
+        .input-container label {
+            font-size: 4vw;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1vh;
+        }
+
+        /* Input numérico */
+        .input-container input[type="number"] {
+            width: 80%;
+            padding: 1vh;
+            font-size: 4vw;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+		#left{
+			--my-color: #5d6b9a;
+		}
+		#right{
+			--my-color: #e5e35e;
+		}
+    </style>
+</head>
+<body class="coche">
+
+    <!-- Logo de la empresa -->
+    <img src="logo.png" alt="FABRIKA" class="logo" onclick="location.href='menu.html'">
+
+    <!-- Contenedor para los cuadros de input -->
+    <div class="inputs-wrapper">
+        <!-- Cuadro de input 1 -->
+        <div class="input-container" id="left">
+            <label for="input1">Procedimiento</label>
+            <input type="number" id="iA" name="input1" placeholder="0">
+        </div>
+
+        <!-- Cuadro de input 2 -->
+        <div class="input-container" id="right">
+            <label for="input2">Material</label>
+            <input type="number" id="iB" name="input2" placeholder="0">
+        </div>
+    </div>
+
+    <!-- Botón inferior sin funcionalidad -->
+	<h2 id="result"></h2>
+    <button onclick="button_callback()" id="botonfabrika">Fabrika</button>
+
+</body>
+</html>
