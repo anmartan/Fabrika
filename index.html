@@ -2,29 +2,27 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>
-            PDF
-        </title>
-        <script type="text/javascript" src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PDF</title>
+		<script type="text/javascript" src="main.js"></script>
         <link type="text/css" href="main.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     </head>
     <script type="text/javascript">
         //D3 codes will go here
     </script>
-    <body>
-        <h1>Hola k'ace?</h1>
-        <main>
-        <div class="card" id="material">
-            <p>Material</p>
-            <input id="iA" type="number"></input>
-        </div>
-        <div class="card" id="process">
-            <p>Proceso</p>
-            <input id="iB" type="number"></input>
-        </div>
-        <button id="button" type="button" onclick="button_callback()">Probar</button>
-        <h2 id="result"></h2>
-        </main>
+    <body class="center">
+	<div class="menu">
+        <!-- Logo de la empresa -->
+        <img src="logo.png" alt="FABRIKA" class="logo">
+
+        <!-- Botones del menú -->
+        <button onclick="location.href='tutorial.html'">FABRIKA: Marcapáginas</button>
+        <button onclick="location.href='coche.html'">FABRIKA: Coche en miniatura</button>
+        <button onclick="location.href='camara.html'">FABRIKA: Cámara de fotos</button>
+    </div>
+
     </body>
 </html>
-
