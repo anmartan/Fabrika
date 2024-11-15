@@ -7,7 +7,7 @@ const materiales =  [11, 23, 41, 9, 15, 19, 22, 8, 16, 46, 7, 39]
 let solution = {}
 
 
-function camera(){
+function camara(){
 	solution = {};
 	solution[32]={11: [22, "Carcasa"]};
 	solution[4]= {19: [47, "Trípode"]};
@@ -35,6 +35,8 @@ function coche(){
 	solution[4]={1:[16, "Ejes terminados"]};
 }
 
+function tutorial() {
+}
 function func(a, b){
 	if (a in solution){
 		if (b in solution[a])
