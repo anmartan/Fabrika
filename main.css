@@ -14,6 +14,81 @@ gap: 2rem;
 	font-size: 2rem;	
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+  font-family: "Mohave", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Estilos generales */
+body {
+	font-family: Arial, sans-serif;
+	min-height: 100vh;
+	background-color: #E0DFCD;
+}
+.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Contenedor del menú */
+.menu {
+	justify-content: center;
+	background-color: #E0DFCD;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 400px; /* Limita el ancho en tabletas */
+	padding: 20px;
+}
+
+/* Estilo del logo */
+.logo {
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+/* Botones del menú */
+button {
+	width: 80%;
+	height: 10vh;
+	padding: 15px;
+	margin: 5px 0;
+	font-size: 16px;
+	color: #886c51;
+	background-color: #FEFDF2;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #bfa994;
+}
+
 #process{
 	background-color:cyan;
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+#botonfabrika {
+	width: 40%;
 }

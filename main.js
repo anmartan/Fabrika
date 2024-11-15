@@ -35,8 +35,6 @@ function coche(){
 	solution[4]={1:[16, "Ejes terminados"]};
 }
 
-coche();
-
 function func(a, b){
 	if (a in solution){
 		if (b in solution[a])
