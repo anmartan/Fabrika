@@ -71,26 +71,30 @@
 <body class="coche">
 
     <!-- Logo de la empresa -->
-    <img src="logo.png" alt="FABRIKA" class="logo" onclick="location.href='menu.html'">
+    <img src="logo.png" alt="FABRIKA" class="logo" onclick="location.href='index.html'">
 
     <!-- Contenedor para los cuadros de input -->
-    <div class="inputs-wrapper">
-        <!-- Cuadro de input 1 -->
-        <div class="input-container" id="left">
-            <label for="input1">Procedimiento</label>
-            <input type="number" id="iA" name="input1" placeholder="0">
-        </div>
+    <div id="wrapper">
+		<div class="inputs-wrapper">
+			<!-- Cuadro de input 1 -->
+			<div class="input-container" id="left">
+				<label for="input1">Procedimiento</label>
+				<input type="number" id="iA" name="input1" placeholder="0">
+			</div>
 
-        <!-- Cuadro de input 2 -->
-        <div class="input-container" id="right">
-            <label for="input2">Material</label>
-            <input type="number" id="iB" name="input2" placeholder="0">
-        </div>
+			<!-- Cuadro de input 2 -->
+			<div class="input-container" id="right">
+				<label for="input2">Material</label>
+				<input type="number" id="iB" name="input2" placeholder="0">
+			</div>
+		</div>
     </div>
-
-    <!-- Botón inferior sin funcionalidad -->
-	<h2 id="result"></h2>
     <button onclick="button_callback()" id="botonfabrika">Fabrika</button>
 
+
+	<div class="return-fields" id="return">
+		<div class="answer-display" id="result">muahsdkjsdkfgksfdgjkasdhfhsadfkhslkjdfhshfdksahdfhsdfhsldhfkjashdfkshdfkhsdfkhsdkfhaskdhfkshdfkshdfkhsdfkhsdhfklsahfdkshdfkhsdfkhskdfhsakhfkasjhfdkajshfdkjashdfkl</div>
+		<button class="bottom-button center" id="return-button" onclick="resetForm()">Volver</button>
+	</div>
 </body>
 </html>

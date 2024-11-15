@@ -17,7 +17,7 @@ function camera(){
 	solution[43]={46: [36, "Circuitería interna"] };// 46 = 7 + 39 (cables + placa base)
 	solution[10,15, 18, "Chasis"]
 	solution[13]={16:[6, "Lentes pulidas"]};
-	solution[1]={9: [20, "Anillo de enfoque"]};
+	solution[1]={9: [20, "Objetivo"]};
 	solution[27]={ 8: [29, "Carcasa terminada"]};
 }
 
@@ -40,20 +40,41 @@ function func(a, b){
 		if (b in solution[a])
 		{
 			console.log(solution[a][b]);
-			document.querySelector("#result").innerHTML=`Has creado ${solution[a][b][1]}`;
+			document.querySelector("#result").innerHTML=`Has construido: ${solution[a][b][1]} <br>Coge la carta con ID: ${solution[a][b][0]}`;
 		}
 		else{
 			console.log("Cerca:");
 			console.log(solution[a]);
+			document.querySelector("#result").innerHTML=`Esa combinación no es correcta.`;
 		}
 	}
 	else{
 		console.log(solution);
+		document.querySelector("#result").innerHTML=`Esa carta no existe.`;
 	}
 };
+
+function showResult() {
+    // Ocultar inputs y botón inicial
+    document.getElementById('wrapper').classList.add('hidden');
+    document.getElementById('botonfabrika').classList.add('hidden');
+
+    // Mostrar texto y botón de retorno
+    document.getElementById('return').classList.remove('hidden');
+}
+
+function resetForm() {
+    // Mostrar inputs y botón inicial
+    document.getElementById('wrapper').classList.remove('hidden');
+    document.getElementById('botonfabrika').classList.remove('hidden');
+
+    // Ocultar texto y botón de retorno
+    document.getElementById('return').classList.add('hidden');
+}
 
 function button_callback(e){
 	const iA = document.querySelector("#iA");
 	const iB = document.querySelector("#iB");
-	func(parseInt(iA.value),iB.value);
+	func(parseInt(iA.value),parseInt(iB.value));
+	showResult();
 }
