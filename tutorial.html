@@ -9,12 +9,21 @@
         <link type="text/css" href="main.css" rel="stylesheet" />
 
     <style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			
+		  font-family: "Mohave", serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;
+		}
 		.coche {
 			display: grid;
 			place-items: center;
 		}
 
-        /* Contenedor para los cuadros de input en fila */
         .inputs-wrapper {
             display: flex;
             gap: 4vw; /* Espacio entre los cuadros */
@@ -25,8 +34,7 @@
             margin-bottom: 5vh;
 			padding: 0 5vw;
         }
-
-        /* Contenedor de cada cuadro de input */
+		
         .input-container {
 			--my-color: #ff00ff;
             flex: 1;
@@ -41,9 +49,7 @@
             align-items: center;
             text-align: center;
         }
-		#
-
-        /* Texto del título de cada cuadro de input */
+		
         .input-container label {
             font-size: 4vw;
             font-weight: bold;
@@ -66,6 +72,19 @@
 		#right{
 			--my-color: #e5e35e;
 		}
+		
+		.text-container {
+            width: 80vw;
+            max-width: 400px;
+            padding: 2vh;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body class="coche">
@@ -73,6 +92,12 @@
     <!-- Logo de la empresa -->
     <img src="logo.png" alt="FABRIKA" class="logo" onclick="location.href='index.html'">
 
+	<div id="popup">
+		<div class="text-container" id="text-container">
+			<div class="text" id="text">Coge estas cartas: </div>
+			<button class="hide-button" id="hide-button" onclick="closePopup()">Ocultar</button>
+		</div>
+    </div>
     <!-- Contenedor para los cuadros de input -->
     <div id="wrapper">
 		<div class="inputs-wrapper">
@@ -96,5 +121,6 @@
 		<div class="answer-display" id="result">Esa carta no existe</div>
 		<button class="bottom-button center" id="return-button" onclick="resetForm()">Fabrika</button>
 	</div>
+		<script>tutorial()</script>
 </body>
 </html>
