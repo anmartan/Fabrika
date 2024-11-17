@@ -66,6 +66,8 @@ function func(a, b){
 		{
 			console.log(solution[a][b]);
 			document.querySelector("#result").innerHTML=`Coge la carta: ${solution[a][b][0]}`;
+			document.querySelector("#iA").value ="";
+			document.querySelector("#iB").value ="";
 		}
 		else{
 			console.log("Cerca:");
