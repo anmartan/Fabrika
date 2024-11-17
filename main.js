@@ -1,9 +1,3 @@
-const MATERIALES =  [38, 14, 12, 29, 2, 11, 21]
-const PDF =  [6,37,8,45,3,22,33,43,1,17]
-
-const fabricacion =  [32, 4, 2, 18, 30, 43, 10, 13, 1, 27]
-const materiales =  [11, 23, 41, 9, 15, 19, 22, 8, 16, 46, 7, 39]
-
 let solution = {}
 let starters = []
 
@@ -39,7 +33,7 @@ function coche(){
 	solution[21]={20:[13, "Chasis ajustado"]};
 	solution[34]={12:[18, "Ejes de las ruedas"]};
 	solution[4]={18:[16, "Ejes terminados"]};
-	solution[50]={ 168: [3, "Coche terminado"]};
+	solution[50]={ 168: [43, "Coche terminado"]};
 	
 	loadPopup();
 }
