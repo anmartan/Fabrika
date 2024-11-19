@@ -11,7 +11,7 @@ function camara(){
 	solution[18]={23:[16, "Lentes"]};
 	solution[30]={22: [8, "Carcasa con ranura"]};
 	solution[43]={46: [36, "Circuitería interna"] };// 46 = 7 + 39 (cables + placa base)
-	solution[10]={15: [18, "Chasis"]};
+	solution[10]={15: [37, "Chasis"]};
 	solution[13]={16:[6, "Lentes pulidas"]};
 	solution[1]={9: [20, "Objetivo"]};
 	solution[27]={ 8: [29, "Carcasa terminada"]};
@@ -22,7 +22,7 @@ function camara(){
 
 function coche(){
 	solution = {};
-	starters = [1, 3, 4, 5, 6, 10, 12, 15, 21, 22, 25, 28, 31, 32, 33, 34, 41]; 
+	starters = [1, 3, 4, 5, 6, 10, 12, 15, 21, 22, 25, 28, 31, 32, 33, 34, 41, 50]; 
 	solution[33]={10:[26,"Carcasa"], 31:[27, ""]};
 	solution[25]={1:[19, "Base decorativa"]};
 	solution[5]={32:[24, "Motor"]};

@@ -27,7 +27,7 @@ gap: 2rem;
 
 /* Estilos generales */
 body {
-	font-family: Arial, sans-serif;
+	font-family: "Mohave", serif;
 	min-height: 100vh;
 	background-color: #E0DFCD;
 }
@@ -51,7 +51,7 @@ body {
 
 /* Estilo del logo */
 .logo {
-	width: 300px;
+	width: 250px;
 	margin-bottom: 20px;
 }
 
@@ -64,10 +64,9 @@ body {
     max-width: 400px;
     padding: 2vh;
     text-align: center;
-    font-size: 2vw;
+    font-size: 8vw;
     font-weight: bold;
     color: #333;
-    margin: 20px auto;
 }
 .return-fields{
     display: flex;
