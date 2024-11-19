@@ -9,12 +9,12 @@ function camara(){
 	solution[4]= {19: [47, "Trípode"]};
 	solution[2]={41:[39, "Placa base"]};
 	solution[18]={23:[16, "Lentes"]};
-	solution[30]={22: [8, "Carcasa con ranura"]};
+	solution[27]={22: [8, "Carcasa con ranura"]};
 	solution[43]={46: [36, "Circuitería interna"] };// 46 = 7 + 39 (cables + placa base)
 	solution[10]={15: [37, "Chasis"]};
 	solution[13]={16:[6, "Lentes pulidas"]};
 	solution[1]={9: [20, "Objetivo"]};
-	solution[27]={ 8: [29, "Carcasa terminada"]};
+	solution[30]={ 8: [29, "Carcasa terminada"]};
 	solution[50]={ 156: [3, "Camara terminada"]};
 	
 	loadPopup();
